@@ -74,6 +74,9 @@ def countFingers(image, hand_landmarks, handNo=0):
              # ADD CODE HERE #
 
         ################################ 
+        image pyautogui.screenshot() 
+        image = cv2.cvtColor(np.array(image), cv2.COLOR_RGB2BGR) 
+        cv2.imwrite("in_memory_to_disk.png", image)
         
 # Define a function to 
 def drawHandLanmarks(image, hand_landmarks):
